@@ -19,7 +19,7 @@ Schemas of the AdventureWorks and StackOverflow with the tables to be taken out 
 
 **AdventureWorksDW**
 
-![AdventureWorksDW!](images/adventureWorksDW.png)
+![AdventureWorksDW!](images/adventureworksDW.png)
 
 
 The schema for the new database will be added later.
