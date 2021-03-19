@@ -5,7 +5,7 @@ CREATE USER joyful_alligator WITH
   NOCREATEDB
   NOCREATEROLE
   NOREPLICATION;
-  
+
 
 CREATE DATABASE adventuresOverflow
     WITH
@@ -20,6 +20,7 @@ CREATE DATABASE adventuresOverflow
 
 CREATE SCHEMA sales;
 
+GRANT ALL PRIVILEGES ON DATABASE adventuresOverflow TO joyful_alligator;
 
 CREATE TABLE sales.DimDate (
     DateKey integer PRIMARY KEY,
