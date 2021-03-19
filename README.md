@@ -1,5 +1,5 @@
 # datapipeline
-A data pipeline using **Airflow**, **dbt**, and **Great Expectations**
+A data pipeline using **Airflow**, **dbt** and **Great Expectations**
 
 For this data pipeline I want to connect:	
 1. Posts table from the OLTP Database of StackOverflow2010 (with data from 2008 - 2010).
