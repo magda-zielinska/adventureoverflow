@@ -1,27 +1,3 @@
-CREATE USER joyful_alligator WITH
-  LOGIN
-  NOSUPERUSER
-  INHERIT
-  NOCREATEDB
-  NOCREATEROLE
-  NOREPLICATION;
-
-
-CREATE DATABASE adventuresOverflow
-    WITH
-    OWNER = joyful_alligator
-    ENCODING = 'UTF8'
-    LC_COLLATE = 'en_US.UTF-8'
-    LC_CTYPE = 'en_US.UTF-8'
-    TABLESPACE = pg_default
-    CONNECTION LIMIT = -1
-	TEMPLATE template0;
-	
-
-CREATE SCHEMA sales;
-
-GRANT ALL PRIVILEGES ON DATABASE adventuresOverflow TO joyful_alligator;
-
 CREATE TABLE sales.DimDate (
     DateKey integer PRIMARY KEY,
     FullDateAlternateKey date,
