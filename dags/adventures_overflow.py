@@ -5,7 +5,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.postgres_operator import PostgresOperator
 
 
-create_adventures_overflow = './scripts/create-adventuresOverflow.sql'
+create_adventures_overflow_tables = './scripts/create-adventuresOverflow.sql'
 
 default_args = {
     "owner": "airflow",
@@ -24,12 +24,12 @@ dag = DAG("adventures_overflow", default_args=default_args,
 
 end_of_data_pipeline = DummyOperator(task_id='end_of_data_pipeline', dag=dag)
 
-create_adventures_overflow_db = PostgresOperator(
+
+create_adventures_overflow = PostgresOperator(
     dag=dag,
-    task_id='create_adventures_overflow_db',
-    sql=create_adventures_overflow,
-    postgres_conn_id='postgres_default'
+    task_id='create_adventures_overflow',
+    sql=create_adventures_overflow_tables,
+    postgres_conn_id='postgres_sql_adventures',
 )
 
-create_adventures_overflow_db >> end_of_data_pipeline
-
+create_adventures_overflow >> end_of_data_pipeline
