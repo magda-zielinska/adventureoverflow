@@ -1,4 +1,4 @@
-CREATE TABLE sales.DimDate (
+CREATE TABLE IF NOT EXISTS sales.DimDate (
     DateKey integer PRIMARY KEY,
     FullDateAlternateKey date,
     EnglishDayNameOfWeek varchar,
@@ -8,14 +8,14 @@ CREATE TABLE sales.DimDate (
 	FiscalSemester smallint
 );
 
-CREATE TABLE sales.DimSalesTerritory (
+CREATE TABLE IF NOT EXISTS sales.DimSalesTerritory (
     SalesTerritoryKey integer PRIMARY KEY,
 	SalesTerritoryRegion varchar,
 	SalesTerritoryCountry varchar,
 	SalesTerritoryGroup varchar
 );
 
-CREATE TABLE sales.DimDateHoliday (
+CREATE TABLE IF NOT EXISTS sales.DimDateHoliday (
 	DateHolidayKey serial PRIMARY KEY,
     DateKey integer,
 	TerritoryCode char(2),
@@ -24,7 +24,7 @@ CREATE TABLE sales.DimDateHoliday (
 	FOREIGN KEY (DateKey) REFERENCES sales.DimDate(DateKey)
 );
 
-CREATE TABLE sales.DimCustomer (
+CREATE TABLE IF NOT EXISTS sales.DimCustomer (
     CustomerKey integer PRIMARY KEY,
     GeographyKey date,
     FirstName varchar,
@@ -41,7 +41,7 @@ CREATE TABLE sales.DimCustomer (
 	FOREIGN KEY (SalesTerritoryKey) REFERENCES sales.DimSalesTerritory(SalesTerritoryKey)
 );
 
-CREATE TABLE sales.FactInternetSales (
+CREATE TABLE IF NOT EXISTS sales.FactInternetSales (
 	OrderSalesNumber integer PRIMARY KEY,
     ProductKey integer,
     OrderDateKey integer,
@@ -64,7 +64,7 @@ CREATE TABLE sales.FactInternetSales (
 	);
 	
 	
-CREATE TABLE sales.FactPosts (
+CREATE TABLE IF NOT EXISTS sales.FactPosts (
 	PostKey integer PRIMARY KEY,
     AnswerCount integer,
     Body varchar,
