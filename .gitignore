@@ -130,3 +130,6 @@ dmypy.json
 
 # Desktop Services Store files
 .DS_Store
+
+# Airflow
+logs/
