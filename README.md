@@ -1,4 +1,4 @@
-# datapipeline
+# adventureoverflow
 A data pipeline using **Airflow**, **dbt** and **Great Expectations**
 
 For this data pipeline I want to connect:	
@@ -22,4 +22,4 @@ Schemas of the AdventureWorks and StackOverflow with the tables to be taken out 
 ![AdventureWorksDW!](images/adventureworksDW.png)
 
 
-The schema for the new database will be added later.
+A schema for the new database will be added later.
