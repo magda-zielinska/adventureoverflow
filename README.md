@@ -19,13 +19,10 @@ Schemas of the AdventureWorks and StackOverflow with the tables to be taken out 
 
 **AdventureWorksDW**
 
-Schema of the new AdventuresOverflow database:
-
- ![AdventuresOverflow Schema!](images/adventuresoverflow_scheme.jpeg)
-
-
-
 ![AdventureWorksDW!](images/adventureworksDW.png)
 
+**AdventuresOverflow**
 
-A schema for the new database will be added later.
+Schema of the new AdventuresOverflow database:
+
+ ![AdventuresOverflow Schema!](images/adventuresoverflow_scheme.png)
