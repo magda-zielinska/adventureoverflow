@@ -25,4 +25,4 @@ Schemas of the AdventureWorks and StackOverflow with the tables to be taken out 
 
 Schema of the new AdventuresOverflow database:
 
- ![AdventuresOverflow Schema!](images/adventuresoverflow_scheme.png)
+ ![AdventuresOverflow Schema!](images/adventuresoverflow_scheme.jpeg)
