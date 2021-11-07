@@ -5,9 +5,9 @@ For this data pipeline I want to connect:
 1. Posts table from the OLTP Database of StackOverflow2010 (with data from 2008 - 2010).
 Database is available for download from [Brent Ozar website](https://www.brentozar.com/archive/2015/10/how-to-download-the-stack-overflow-database-via-bittorrent/)
 
-2. A few tables from the AdventureWorksDW database, namely: FactInterntSales, DimSalesTerritory, DimCustomer, DimDate, FactSalesQuota, DimEmployee
+2. Following tables from the AdventureWorksDW database: FactInterntSales, DimSalesTerritory, DimCustomer, DimDate, FactSalesQuota, DimEmployee
 
-Thhe RDBMS for both databases is ServerSQL.
+The RDBMS for both databases is ServerSQL.
 
 3. Data from the [Calendarific API](https://calendarific.com/) to include information about holidays into the new database. This information will go into a table called DimDateHoliday
 
@@ -18,6 +18,12 @@ Schemas of the AdventureWorks and StackOverflow with the tables to be taken out 
  ![StackOverflow2010Schema!](images/StackOverflow2010.jpeg)
 
 **AdventureWorksDW**
+
+Schema of the new AdventuresOverflow database:
+
+ ![AdventuresOverflow Schema!](images/adventuresoverflow_scheme.jpeg)
+
+
 
 ![AdventureWorksDW!](images/adventureworksDW.png)
 
